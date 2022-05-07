@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat May 07 2022 11:58:43 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat May 07 2022 20:43:38 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6169a41cdf01aa6ba896a848" data-wf-site="6102b73e49b8927d84e54176">
 <head>
   <meta charset="utf-8">
@@ -64,6 +64,11 @@
         /* UTILITY CLASSES*/
         .z0 {
           z-index: 0;
+        }
+        .w-lightbox-frame,
+        .w-lightbox-embed {
+          width: 100vw;
+          height: 100vh;
         }
         /* VIDEOS ASPECT RATIOS*/
         .border01-video,
@@ -139,7 +144,7 @@ which neatly locks each line of text into the center as the user scrolls through
         <a href="#" class="chaptermenu_item w-inline-block">Chapter 8</a>
       </div>
     </aside>
-    <section id="1" data-w-id="cdb2de54-3c59-9b06-10d4-dfdc46c26632" class="chapter_1 wf-section">
+    <section id="1" data-w-id="cdb2de54-3c59-9b06-10d4-dfdc46c26632" class="chapter one wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
@@ -172,29 +177,31 @@ which neatly locks each line of text into the center as the user scrolls through
           </div>
         </div>
       </div>
-      <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="images/Kubra_04.jpg" loading="lazy" sizes="100vw" srcset="images/Kubra_04-p-500.jpeg 500w, images/Kubra_04-p-1080.jpeg 1080w, images/Kubra_04-p-1600.jpeg 1600w, images/Kubra_04-p-2000.jpeg 2000w, images/Kubra_04-p-2600.jpeg 2600w, images/Kubra_04.jpg 3200w" alt="Kobra Yaqubi, 28, hugs her father Khodadad Yaqubi, 76, at their home in Van, Turkey. They are Afghan refugees from Mazar-e Sharif and first fled to Iran in 1982 and Turkey in 2018." class="kubra-dad">
-        <div class="vignette"></div>
-        <div data-w-id="f66d0dde-110d-bf36-3065-198fa43f8066" style="opacity:0" class="play_wrapper">
-          <div class="play_button" data-w-id="f66d0dde-110d-bf36-3065-198fa43f8067" data-animation-type="lottie" data-src="documents/play_grey.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.06873531780742" data-duration="0"></div>
-          <div class="play_instruction">See Kubra and her father</div>
-        </div>
-        <script type="application/json" class="w-json">
-            {
-              "items": [{
-                "url": "https://vimeo.com/585321784?controls=0&autoplay=1",
-                "originalUrl": "https://vimeo.com/585321784?controls=0&autoplay=1",
-                "width": 940,
-                "height": 529,
-                "thumbnailUrl": "https://i.vimeocdn.com/video/1211280476-94db990b30524b5459864dcfba87abaab7b5a3080fa0c97ce2728461d486a359-d_1280",
-                "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F585321784%3Fh%3D1b263cf6ab%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F585321784&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1211280476-94db990b30524b5459864dcfba87abaab7b5a3080fa0c97ce2728461d486a359-d_1280&key=96f1f04c5f4143bcb0f2e68c87d65feb&autoplay=1&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-                "type": "video"
-              }],
-              "group": ""
-            }
-          </script>
-      </a>
+      <div class="kubra-dad-video-wrapper">
+        <a href="#" class="lightbox-link w-inline-block w-lightbox"><img src="images/Kubra_04.jpg" loading="lazy" sizes="100vw" srcset="images/Kubra_04-p-500.jpeg 500w, images/Kubra_04-p-1080.jpeg 1080w, images/Kubra_04-p-1600.jpeg 1600w, images/Kubra_04-p-2000.jpeg 2000w, images/Kubra_04-p-2600.jpeg 2600w, images/Kubra_04.jpg 3200w" alt="Kobra Yaqubi, 28, hugs her father Khodadad Yaqubi, 76, at their home in Van, Turkey. They are Afghan refugees from Mazar-e Sharif and first fled to Iran in 1982 and Turkey in 2018." class="kubra-dad">
+          <div class="vignette"></div>
+          <div data-w-id="f66d0dde-110d-bf36-3065-198fa43f8066" style="opacity:0" class="play_wrapper">
+            <div class="play_button" data-w-id="f66d0dde-110d-bf36-3065-198fa43f8067" data-animation-type="lottie" data-src="documents/play_grey.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.06873531780742" data-duration="0"></div>
+            <div class="play_instruction">See Kubra and her father</div>
+          </div>
+          <script type="application/json" class="w-json">
+              {
+                "items": [{
+                  "url": "https://vimeo.com/163419423",
+                  "originalUrl": "https://vimeo.com/163419423",
+                  "width": 940,
+                  "height": 529,
+                  "thumbnailUrl": "https://i.vimeocdn.com/video/566779343-d24e759d41ec69e3bd72cd6188cf46ba1ba17e9460586bd4ed8e7a49b2f01e25-d_1280",
+                  "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F163419423%3Fh%3D8d8039268d%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F163419423&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F566779343-d24e759d41ec69e3bd72cd6188cf46ba1ba17e9460586bd4ed8e7a49b2f01e25-d_1280&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+                  "type": "video"
+                }],
+                "group": ""
+              }
+            </script>
+        </a>
+      </div>
     </section>
-    <section id="2" data-w-id="23a5f788-5baf-ab11-6dd7-1b9fc25ad62b" class="chapter_2 wf-section">
+    <section id="2" data-w-id="23a5f788-5baf-ab11-6dd7-1b9fc25ad62b" class="chapter two wf-section">
       <div data-is-ix2-target="1" class="section-progress-circle" data-w-id="7c8514ae-1d4f-0f41-a604-9022e8db9f55" data-animation-type="lottie" data-src="documents/circular-progress-360.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="90" data-duration="0"></div>
       <section data-w-id="e5f1973a-144d-cda6-6d9c-5a1706fbf4cc" class="iran-border_01">
         <figure data-poster-url="videos/border01-poster-00001.jpg" data-video-urls="videos/border01-transcode.mp4,videos/border01-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-w-id="a1dbaf22-47b4-7b49-f279-67440ba69523" class="border01-video w-background-video w-background-video-atom"><video id="a1dbaf22-47b4-7b49-f279-67440ba69523-video" autoplay="" loop="" style="background-image:url(&quot;videos/border01-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -280,6 +287,8 @@ which neatly locks each line of text into the center as the user scrolls through
               </script>
           </a>
         </div>
+      </section>
+      <div data-w-id="2949220b-0618-c38a-b525-0d71a3d95180" class="roya-wrap">
         <a href="#" class="roya w-inline-block w-lightbox"><img src="images/roya.jpg" loading="eager" sizes="100vw" srcset="images/roya-p-500.jpeg 500w, images/roya-p-1080.jpeg 1080w, images/roya-p-1600.jpeg 1600w, images/roya-p-2000.jpeg 2000w, images/roya-p-2600.jpeg 2600w, images/roya.jpg 3200w" alt="Taiba, 7, Abdolhassan, 11, and Bahara, 14, from left, clean photographs of her mother Roya at their home in Turkey. 
 They are from Gazni, Afghanistan and along their father Muhammad Ewaz Ahmedzada and mother were crossing the Iran-Turkey border last year when they became separated. The mother handed the two younger children to the father, to carry them across a mountain stream, and she herself was swept away by the water. Weeks later, her body was found by Iranian border guards and handed over to Muhammad’s brother, who lives as a refugee in Iran. Authorities said she had been shot and killed, but no case was ever carried forward against either Turkish or Iranian authorities. 
 Now, Muhammad lives with his children in the town of Bolu, a few hours east of Istanbul. He has no work permit, and has tried to have his case registered with authorities for resettlement in a third country, but with no progress. Unable to find work, he and his children leave home each evening to collect plastic, cardboard, and other material from the garbage to sell for recycling." class="image-cover">
@@ -308,7 +317,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
               }
             </script>
         </a>
-      </section>
+      </div>
       <a href="#" id="nek" class="lightbox-link w-inline-block w-lightbox">
         <div data-poster-url="videos/BorderTown-poster-00001.jpg" data-video-urls="videos/BorderTown-transcode.mp4,videos/BorderTown-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-w-id="3f160792-7afa-fe0d-6804-8a919d4f77e7" style="opacity:0" class="saricimen w-background-video w-background-video-atom"><video id="3f160792-7afa-fe0d-6804-8a919d4f77e7-video" autoplay="" loop="" style="background-image:url(&quot;videos/BorderTown-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
             <source src="videos/BorderTown-transcode.mp4" data-wf-ignore="true">
@@ -367,7 +376,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
         </div>
       </div>
     </section>
-    <section id="3" data-w-id="69fa757f-c65e-f23f-a80d-08464731e7c3" class="chapter_3 wf-section">
+    <section id="3" data-w-id="69fa757f-c65e-f23f-a80d-08464731e7c3" class="chapter three wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
@@ -623,7 +632,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
         </div>
       </div>
     </section>
-    <section id="4" data-w-id="5cc7a67c-ccb1-03ca-1099-e6c059cad5f3" class="chapter_4 wf-section">
+    <section id="4" data-w-id="5cc7a67c-ccb1-03ca-1099-e6c059cad5f3" class="chapter wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
@@ -689,7 +698,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
         <div style="padding-top:56.27659574468085%" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F585321807%3Fapp_id%3D122963%26h%3D5891b50327&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F585321807&image=http%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1211280334_1280&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
       </div>
     </section>
-    <section id="5" data-w-id="d056be5f-fdb5-d1a4-9c0f-8647749b6dc1" class="chapter_5 wf-section">
+    <section id="5" data-w-id="d056be5f-fdb5-d1a4-9c0f-8647749b6dc1" class="chapter five wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
@@ -701,7 +710,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
       <p class="s">In 2015, a massive wave of migrants -- Afghans as well as Syrians -- crossed into Europe.  The response from European governments was to make it even more difficult to cross, and nearly impossible for Afghans to be granted asylum even if they reached Europe.</p>
       <p>NEED CONTENT + VISUALS FOR THIS SECTION ~~ NEED CONTENT + VISUALS FOR THIS SECTION ~~ NEED CONTENT + VISUALS FOR THIS SECTION </p>
     </section>
-    <section id="6" data-w-id="8899c22a-b8ca-7c92-c2c7-f1d9aac43141" class="chapter_6 wf-section">
+    <section id="6" data-w-id="8899c22a-b8ca-7c92-c2c7-f1d9aac43141" class="chapter six wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
@@ -775,7 +784,7 @@ Now, Muhammad lives with his children in the town of Bolu, a few hours east of I
         <div class="w-layout-grid"><img src="images/mahdi_01.jpg" loading="lazy" sizes="(max-width: 3200px) 100vw, 3200px" srcset="images/mahdi_01-p-1080.jpeg 1080w, images/mahdi_01-p-1600.jpeg 1600w, images/mahdi_01-p-2000.jpeg 2000w, images/mahdi_01-p-2600.jpeg 2600w, images/mahdi_01.jpg 3200w" alt="Mahdi Amiri photographed in Cologne, Germany. Mahdi became separated from his family while traveling from Afghanistan. He currently lives with a German foster family."><img src="images/mahdi_03.jpg" loading="lazy" sizes="(max-width: 3200px) 100vw, 3200px" srcset="images/mahdi_03-p-500.jpeg 500w, images/mahdi_03-p-1080.jpeg 1080w, images/mahdi_03-p-1600.jpeg 1600w, images/mahdi_03-p-2000.jpeg 2000w, images/mahdi_03-p-2600.jpeg 2600w, images/mahdi_03.jpg 3200w" alt="Mahdi Amiri, left, plays a videogame with his step brother Martin, at their home in Cologne, Germany. Mahdi became separated from his family while traveling from Afghanistan. He currently lives with a German foster family."><img src="images/mahdi_02.jpg" loading="lazy" sizes="(max-width: 3200px) 100vw, 3200px" srcset="images/mahdi_02-p-500.jpeg 500w, images/mahdi_02-p-1080.jpeg 1080w, images/mahdi_02-p-1600.jpeg 1600w, images/mahdi_02-p-2000.jpeg 2000w, images/mahdi_02-p-2600.jpeg 2600w, images/mahdi_02.jpg 3200w" alt=""></div>
       </div>
     </section>
-    <section id="7" data-w-id="3a6e1fca-28bc-cc29-99a8-2b6cfe605703" class="chapter_7 wf-section">
+    <section id="7" data-w-id="3a6e1fca-28bc-cc29-99a8-2b6cfe605703" class="chapter seven wf-section">
       <header id="nav" class="chapter-nav">
         <div class="w-layout-grid nav-grid">
           <div data-w-id="70ec88b9-8354-24b3-d35e-287949abc722" data-is-ix2-target="1" class="nav-logo-link" data-animation-type="lottie" data-src="documents/hamburger-x.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0"></div>
