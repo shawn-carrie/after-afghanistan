@@ -927,9 +927,6 @@ textarea.w-select {
   background-color: transparent;
   padding: 0;
 }
-.w-background-video--control > [hidden] {
-  display: none !important;
-}
 .w-slider {
   position: relative;
   height: 300px;
