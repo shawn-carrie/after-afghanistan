@@ -2689,20 +2689,15 @@ figure {
   background-color: hsla(0, 0%, 100%, 0);
 }
 
-.page-loading-animation {
+.pageloader-wrapper {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
   z-index: 10;
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding: 29% 46%;
+  display: block;
   background-color: #000;
-  -webkit-transform: translate(-50%, -50%) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
-  transform: translate(-50%, -50%) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 .img__cover {
@@ -3017,6 +3012,20 @@ figure {
   -webkit-transform: translate(0%, 0px);
   -ms-transform: translate(0%, 0px);
   transform: translate(0%, 0px);
+}
+
+.pageloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  display: block;
+  width: 12.5%;
+  height: 12.5%;
+  -webkit-transform: translate(-50%, -50%) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 @media screen and (max-width: 767px) {
